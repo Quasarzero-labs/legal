@@ -15,6 +15,7 @@ p, li { margin:8px 0; }
 em { color:var(--muted); font-style:normal; }
 a { color:var(--accent); }
 hr { border:0; border-top:1px solid var(--line); margin:48px 0; }
+code { font:15px ui-monospace, Menlo, monospace; }
 .brand { font-weight:800; letter-spacing:1px; color:var(--accent); margin-bottom:24px; }
 </style>
 </head>
@@ -26,14 +27,19 @@ hr { border:0; border-top:1px solid var(--line); margin:48px 0; }
 <h2>Données collectées</h2>
 <p><strong>Aucune.</strong> SHP ne collecte aucune donnée personnelle, ne crée aucun compte et n&#x27;envoie aucune donnée au développeur ni à des tiers.</p>
 <h2>Données enregistrées sur votre iPhone</h2>
-<p>Les informations que vous saisissez (programmes, séances, séries, historique, réglages, et si vous les activez : repas, hydratation, sommeil, bilans de récupération, routines de compléments) sont enregistrées <strong>uniquement sur votre iPhone</strong>, dans l&#x27;espace de stockage de l&#x27;application. Elles sont supprimées si vous supprimez l&#x27;application. Vous pouvez effacer toutes les données Santé depuis Profil › Supprimer toutes les données Santé.</p>
+<p>Les informations que vous saisissez (programmes, séances, séries, historique, réglages, et si vous les activez : repas, hydratation, sommeil, bilans de récupération, routines de compléments) sont enregistrées <strong>uniquement sur votre iPhone</strong>, dans l&#x27;espace de stockage de l&#x27;application. Elles sont supprimées si vous supprimez l&#x27;application. Depuis Profil, vous pouvez effacer toutes les données Santé, ou toutes vos données SHP.</p>
+<h2>Sauvegarde</h2>
+<p>À votre demande seulement (Profil › Sauvegarder mes données), SHP crée un fichier <code>.shpbackup</code> qui contient <strong>toutes vos données SHP, y compris vos données Santé</strong> (repas, hydratation, sommeil, bilans, compléments) et vos réglages. Ce fichier <strong>n&#x27;est pas chiffré</strong>.</p>
+<p>Vous choisissez vous-même où l&#x27;enregistrer ou à qui l&#x27;envoyer (par exemple Fichiers › Sur mon iPhone). Une fois enregistré ou envoyé, il sort du contrôle de SHP : sa conservation dépend de l&#x27;emplacement ou du service choisi. SHP ne l&#x27;envoie jamais de lui-même. La copie temporaire créée pour le partage est effacée dès la fermeture de l&#x27;écran de sauvegarde.</p>
+<p>Supprimer vos données dans SHP n&#x27;efface pas les copies de sauvegarde déjà enregistrées ailleurs. Ne transmettez pas ce fichier à un coach : partagez plutôt un programme.</p>
 <h2>Autorisations</h2>
 <ul>
-<li><strong>Calendrier</strong> (facultatif) : uniquement si vous activez l&#x27;option, pour ajouter les séances planifiées à votre calendrier et les mettre à jour. SHP ne lit pas vos autres événements.</li>
+<li><strong>Calendrier</strong> (facultatif) : uniquement si vous activez l&#x27;option, pour ajouter les séances planifiées à votre calendrier et les mettre à jour. SHP ne retrouve que les événements qu&#x27;il a lui-même créés ; il ne lit ni ne modifie vos autres événements.</li>
 <li><strong>Notifications</strong> (facultatif) : pour les alertes de repos et de round, les rappels de séance et les rappels des routines que vous choisissez. Elles sont programmées localement sur l&#x27;iPhone.</li>
 </ul>
 <h2>Partage</h2>
-<p>Rien n&#x27;est partagé automatiquement. Quand vous partagez un programme (fichier SHP ou texte), vous choisissez vous-même l&#x27;application et le destinataire ; seul le plan d&#x27;entraînement est inclus, jamais votre historique ni vos données Santé. L&#x27;extension de partage transmet le texte que vous lui envoyez uniquement à l&#x27;application SHP, sans le conserver.</p>
+<p>Rien n&#x27;est partagé automatiquement. Quand vous partagez un programme (fichier SHP ou texte), vous choisissez vous-même l&#x27;application et le destinataire. Seul le plan d&#x27;entraînement est inclus, avec le nom d&#x27;auteur si vous en avez indiqué un dans Profil ; jamais votre historique ni vos données Santé.</p>
+<p>L&#x27;extension de partage (par exemple depuis Notes) dépose le texte que vous lui envoyez dans un espace réservé à SHP sur votre iPhone. SHP le reprend à sa prochaine ouverture pour vous le montrer avant toute création, et l&#x27;efface aussitôt.</p>
 <h2>Suivi et publicité</h2>
 <p>SHP n&#x27;utilise aucun outil de suivi, aucune publicité et aucun service d&#x27;analyse.</p>
 <h2>Version bêta (TestFlight)</h2>
@@ -45,6 +51,6 @@ hr { border:0; border-top:1px solid var(--line); margin:48px 0; }
 <hr>
 <h1>SHP — Privacy Policy (English)</h1>
 <p><em>Last updated: September 25, 2026</em></p>
-<p>SHP does <strong>not collect any personal data</strong>: no account, no server, no tracking, no ads, no analytics. Everything you enter (programs, sessions, history, settings and, if enabled, meals, water, sleep, check-ins, supplement routines) stays <strong>on your iPhone</strong> and is deleted with the app. Calendar and notification permissions are optional and used only for the features you turn on; SHP never reads your other calendar events. Nothing is shared unless you share a program yourself (the plan only, never your history or Health data). During the TestFlight beta, Apple may pass on feedback and crash reports you choose to send. SHP is not a medical device. Contact: Hermann Djophant (developer) — <a href="mailto:ngoocheu@icloud.com">ngoocheu@icloud.com</a></p>
+<p>SHP does <strong>not collect any personal data</strong>: no account, no server, no tracking, no ads, no analytics. Everything you enter (programs, sessions, history, settings and, if enabled, meals, water, sleep, check-ins, supplement routines) stays <strong>on your iPhone</strong> and is deleted with the app; Profile also lets you delete your Health data or all your data. Only when you ask (Profile › Back up my data), SHP creates a <code>.shpbackup</code> file with <strong>all your SHP data, Health data included</strong>, and your settings. The file is <strong>not encrypted</strong>; you choose where to save it or whom to send it to, after which it is outside SHP&#x27;s control, and deleting data in SHP does not delete copies saved elsewhere. Calendar and notification permissions are optional and used only for the features you turn on; SHP only looks up the calendar events it created. Nothing is shared unless you share a program yourself (the plan and the author name you may have set, never your history or Health data). Text sent to the SHP share extension waits in a space reserved for SHP on your iPhone and is deleted as soon as SHP opens it. During the TestFlight beta, Apple may pass on feedback and crash reports you choose to send. SHP is not a medical device. Contact: Hermann Djophant (developer) — <a href="mailto:ngoocheu@icloud.com">ngoocheu@icloud.com</a></p>
 </main></body>
 </html>
